@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type='text/css' href="{% static '/css/style.css' %}">
+    <script src="{% static '/js/rc.js' %}"></script>
+    <title>Revolutionary Crown</title>
+</head>
+
+<body>
+    <section class="animation-box">
+        <div class="first-text">Are you ready?</div>
+        <div class="second-text">For the best text based choose your own adventure game...</div>
+        <div class="third-text">To come out in May 2020...</div>
+    </section>
+    <div id='title'>
+        <h1>Revolutionary Crown</h1>
+        <h3>Welcome to a choose your own adventure, where will you end up by the end?</h3>
+    </div>
+    <form action="/start_game" method='POST'>
+        {% csrf_token %}
+        <h4>If you're up it press Start!</h4>
+        <button type='submit'>Start Game!!</button>
+    </form>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7353283&style=0009&nbdigits=5&type=page&initCount=0"
+            title="Web Counter" Alt="counter free" id = 'counter' border ="0">
+    </a>
+</body>
+
+</html>
