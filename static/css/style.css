@@ -1,0 +1,141 @@
+*{
+    background-color: black;
+    color: chartreuse;
+    font-family: monospace;
+}
+#counter{
+    margin-top: 200px;
+    margin-left:700px;
+}
+#counter2{
+    margin-top: 300px;
+    margin-left:700px;
+}
+.first-text {
+    font-size: 4.4rem;
+    position: absolute;
+    left: 36rem;
+    top: 18rem;
+    opacity: 0;
+    animation-name: fadeInOut;
+    animation-duration: 4s;
+}
+.second-text {
+    font-size: 4.4rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 15rem;
+    opacity: 0;
+    animation-delay: 4s;
+    animation-name: fadeInOut;
+    animation-duration: 5s;
+}
+.third-text {
+    font-size: 4.4rem;
+    position: absolute;
+    left: 22rem;
+    top: 15rem;
+    opacity: 0;
+    animation-delay: 8s;
+    animation-name: fadeInOut;
+    animation-duration: 5s;
+}
+
+#title h1 {
+    animation: fadeAndScale 15s cubic-bezier(.65, -1.05,.75,1.05);
+    animation-delay: -0.5s;
+    transform-origin: center;
+    font-size: 7.5rem;
+}
+#title h3{
+    animation: fadeAndScale 16s cubic-bezier(.65, -1.05,.75,1.05);
+    animation-delay: -0.5;
+    transform-origin: center;
+    font-size: 3rem;
+}
+form h4, button{
+    animation: fadeAndScale 16s cubic-bezier(.65, -1.05,.75,1.05);
+    animation-delay: -0.5;
+    transform-origin: center;
+    font-size: 2rem;
+}
+.character_creator{
+    animation: fadeAndScale 3s cubic-bezier(.65, -1.05,.75,1.05);
+    animation-delay: -0.5;
+    transform-origin: center;
+    font-size: 2rem;
+}
+
+@keyframes fadeIn2{
+    0% {
+        opacity:0;
+        transform: scale3d(.75, .75, 1);
+    }
+    70%{
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+    100% {
+        opacity:1;
+        transform: scale3d(1,1,1);
+    }
+}
+
+@keyframes fadeAndScale {
+    0% {
+        opacity:0;
+        transform: scale3d(.75, .75, 1);
+    }
+    70%{
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+    100% {
+        opacity:1;
+        transform: scale3d(1,1,1);
+    }
+}
+@-moz-keyframes fadeAndScale { 
+    0% {
+        opacity:0;
+        transform: scale3d(.75, .75, 1);
+    }
+    70%{
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+    100% {
+        opacity:1;
+        transform: scale3d(1,1,1);
+    }
+}
+@-webkit-keyframes fadeAndScale { 
+    0% {
+        opacity:0;
+        transform: scale3d(.75, .75, 1);
+    }
+    70%{
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+    100% {
+        opacity:1;
+        transform: scale3d(1,1,1);
+    }
+}
+
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+  
+    45% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
